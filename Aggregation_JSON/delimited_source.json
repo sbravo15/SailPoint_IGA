@@ -1,0 +1,93 @@
+{
+    "name": "My Source",
+    "owner": {
+      "type": "IDENTITY",
+      "id": "2c91808568c529c60168cca6f90c1313",
+      "name": "MyName"
+    },
+    "connector": "active-directory",
+    "id": "2c91808568c529c60168cca6f90c1324",
+    "description": "This is the corporate directory.",
+    "cluster": {
+      "name": "Corporate Cluster",
+      "id": "2c9180866166b5b0016167c32ef31a66",
+      "type": "CLUSTER"
+    },
+    "accountCorrelationConfig": {
+      "type": "ACCOUNT_CORRELATION_CONFIG",
+      "id": "2c9180855d191c59015d28583727245a",
+      "name": "Directory [source-62867] Account Correlation"
+    },
+    "accountCorrelationRule": {
+      "type": "RULE",
+      "id": "2c918085708c274401708c2a8a760001",
+      "name": "Example Rule"
+    },
+    "managerCorrelationMapping": {
+      "accountAttributeName": "manager",
+      "identityAttributeName": "manager"
+    },
+    "managerCorrelationRule": {
+      "type": "RULE",
+      "id": "2c918085708c274401708c2a8a760001",
+      "name": "Example Rule"
+    },
+    "beforeProvisioningRule": {
+      "type": "RULE",
+      "id": "2c918085708c274401708c2a8a760001",
+      "name": "Example Rule"
+    },
+    "schemas": [
+      {
+        "type": "CONNECTOR_SCHEMA",
+        "name": "account"
+      },
+      {
+        "type": "CONNECTOR_SCHEMA",
+        "name": "group"
+      }
+    ],
+    "passwordPolicies": [
+      {
+        "type": "PASSWORD_POLICY",
+        "name": "Corporate Password Policy"
+      },
+      {
+        "type": "PASSWORD_POLICY",
+        "name": "Vendor Password Policy"
+      }
+    ],
+    "features": [
+      "PROVISIONING",
+      "NO_PERMISSIONS_PROVISIONING",
+      "GROUPS_HAVE_MEMBERS"
+    ],
+    "type": "OpenLDAP - Direct",
+    "connectorClass": "sailpoint.connector.LDAPConnector",
+    "connectorAttributes": {
+      "healthCheckTimeout": 30,
+      "authSearchAttributes": [
+        "cn",
+        "uid",
+        "mail"
+      ]
+    },
+    "deleteThreshold": 10,
+    "authoritative": false,
+    "managementWorkgroup": {
+      "type": "GOVERNANCE_GROUP",
+      "id": "2c91808568c529c60168cca6f90c2222",
+      "name": "My Management Workgroup"
+    },
+    "healthy": true,
+    "status": "SOURCE_STATE_HEALTHY",
+    "since": "2021-09-28T15:48:29.380Z",
+    "connectorId": "active-directory",
+    "connectorName": "Active Directory",
+    "connectionType": "file",
+    "connectorImplementationId": "delimited-file",
+    "created": "2022-02-08T14:50:03.827Z",
+    "modified": "2024-01-23T18:08:50.897Z",
+    "credentialProviderEnabled": false,
+    "category": "CredentialProvider"
+  }
