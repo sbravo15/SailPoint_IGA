@@ -1,0 +1,86 @@
+{
+    "description": "Employees source extract",
+    "owner": {
+      "type": "IDENTITY",
+      "id": "2c91808a790ec83d017990f669ba0003",
+      "name": "admin"
+    },
+    "cluster": null,
+    "accountCorrelationConfig": null,
+    "accountCorrelationRule": null,
+    "managerCorrelationMapping": {
+      "identityAttributeName": "name",
+      "accountAttributeName": "manager"
+    },
+    "managerCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "schemas": [
+      {
+        "type": "CONNECTOR_SCHEMA",
+        "name": "account"
+      },
+      {
+        "type": "CONNECTOR_SCHEMA",
+        "name": "group"
+      }
+    ],
+    "passwordPolicies": null,
+    "features": [
+      "DISCOVER_SCHEMA",
+      "NO_RANDOM_ACCESS",
+      "DIRECT_PERMISSIONS"
+    ],
+    "type": "Delimited File",
+    "connector": "delimited-file",
+    "connectorClass": "sailpoint.connector.DelimitedFileConnector",
+    "connectorAttributes": {
+      "mergeColumns": [
+        "groups"
+      ],
+      "group.mergeRows": true,
+      "group.delimiter": ",",
+      "mergeRows": true,
+      "group.filetransport": "local",
+      "partitionMode": "disabled",
+      "group.host": "local",
+      "group.indexColumn": "id",
+      "delimiter": ",",
+      "deltaAggregation": null,
+      "host": "local",
+      "cloudIdentityProfileName": "Employees",
+      "group.mergeColumns": [
+        "entitlements",
+        "groups",
+        "permissions"
+      ],
+      "hasHeader": true,
+      "filterEmptyRecords": true,
+      "filetransport": "local",
+      "deleteThresholdPercentage": 10,
+      "group.filterEmptyRecords": true,
+      "group.hasHeader": true,
+      "group.partitionMode": "disabled",
+      "cloudAuthoritativeSourcePrecedence": 20,
+      "formPath": null,
+      "group.columnNames": [
+        "id",
+        "name",
+        "displayName",
+        "created",
+        "description",
+        "modified",
+        "entitlements",
+        "groups",
+        "permissions"
+      ]
+    },
+    "templateApplication": "DelimitedFile Template",
+    "indexColumn": "id",
+    "cloudDisplayName": "Employees",
+    "cloudOriginalApplicationType": "Delimited File",
+    "deleteThreshold": 10,
+    "authoritative": false,
+    "managementWorkgroup": null,
+    "name": "Employees"
+  }
+  
