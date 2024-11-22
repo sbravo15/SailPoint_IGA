@@ -1,0 +1,86 @@
+{
+    "description": "Acme Directory system",
+    "owner": {
+      "type": "IDENTITY",
+      "id": "PlaceHolder",
+      "name": "trainee"
+    },
+    "cluster": {
+      "type": "CLUSTER",
+      "id": "PlaceHolder",
+      "name": "AWS Cluster"
+    },
+    "accountCorrelationConfig": null,
+    "accountCorrelationRule": null,
+    "managerCorrelationMapping": null,
+    "managerCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "schemas": [
+      {
+        "type": "CONNECTOR_SCHEMA",
+        "name": "account"
+      },
+      {
+        "type": "CONNECTOR_SCHEMA",
+        "name": "group"
+      }
+    ],
+    "passwordPolicies": [
+      {
+        "type": "PASSWORD_POLICY",
+        "name": "Default"
+      }
+    ],
+    "features": [
+      "PROVISIONING",
+      "MANAGER_LOOKUP",
+      "SYNC_PROVISIONING",
+      "SEARCH",
+      "PASSWORD",
+      "GROUP_PROVISIONING",
+      "AUTHENTICATE"
+    ],
+    "type": "OpenLDAP - Direct",
+    "connector": "openldap",
+    "connectorClass": "sailpoint.connector.LDAPConnector",
+    "connectorAttributes": {
+      "healthCheckTimeout": 30,
+      "filterString": null,
+      "groupMemberAttribute": "uniqueMember",
+      "pageSize": "100",
+      "posixGroup_Member_Attribute": null,
+      "enableNetGroups": false,
+      "password": "1:OgPbbQ2nYawhbWe8ND0634fSInc+OopnAZO+i7dzajAnqkDRxaxwH7JO1JN+NtQ7+CjOw63iBkX0qLWKbZtxYHCdtJrWh6O8Wv+yH9mD/nKtLaxa7U1Og5i",
+      "charsToEscapeWhileProvisioning": "/",
+      "host": "10.0.0.250",
+      "authorizationType": "simple",
+      "keystore": null,
+      "nisNetGroupTriple_Member_Attribute": null
+    },
+    "authSearchAttributes": [
+      "cn",
+      "uid",
+      "mail"
+    ],
+    "searchDN": "ou=users,dc=example,dc=com",
+    "group.searchDN": "ou=groups,dc=example,dc=com",
+    "cloudAuthEnabled": true,
+    "deltaAggregation": null,
+    "groupEntitlementAttr": "groups",
+    "group.iterateSearchFilter": null,
+    "groupMemberFilterString": null,
+    "deleteThresholdPercentage": 10,
+    "passwordAttr": "userPassword",
+    "templateApplication": "OpenLDAP Template",
+    "convertHexToCharacter": "true",
+    "charsToEscapeAtEndInDN": "",
+    "cloudDisplayName": "Directory",
+    "groupMemberSearchDN": "ou=groups,dc=example,dc=com",
+    "user": "cn=admin,dc=example,dc=com",
+    "beforeProvisioningRule": null,
+    "deleteThreshold": 10,
+    "authoritative": false,
+    "managementWorkgroup": null,
+    "name": "Directory"
+  }
+  
