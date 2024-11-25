@@ -77,7 +77,6 @@
     "cloudDisplayName": "Directory",
     "groupMemberSearchDN": "ou=groups,dc=example,dc=com",
     "user": "cn=admin,dc=example,dc=com",
-    "beforeProvisioningRule": null,
     "deleteThreshold": 10,
     "authoritative": false,
     "managementWorkgroup": null,
