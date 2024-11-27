@@ -1,0 +1,26 @@
+{
+    "approvalsMustBeExternal": false,
+    "autoApprovalEnabled": true,
+    "reauthorizationEnabled": false,
+    "requestOnBehalfOfConfig": {
+        "allowRequestOnBehalfOfAnyoneByAnyone": true,
+        "allowRequestOnBehalfOfEmployeeByManager": false
+    },
+    "approvalReminderAndEscalationConfig": {
+        "daysUntilEscalation": 3,
+        "daysBetweenReminders": 2,
+        "maxReminders": 1,
+        "fallbackApproverRef": {
+            "email": "EMAIL_PLACEHOLDEr",
+            "type": "IDENTITY",
+            "id": "ID_PLACEHOLDER]",
+            "name": "NAME_PLACEHOLDER"
+        }
+    },
+    "entitlementRequestConfig": {
+        "allowEntitlementRequest": true,
+        "requestCommentsRequired": true,
+        "deniedCommentsRequired": true,
+        "grantRequestApprovalSchemes": "manager"
+    }
+}
