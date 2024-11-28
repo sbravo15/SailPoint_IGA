@@ -1,0 +1,10 @@
+{
+    "id": "account1",
+    "nativeIdentity": "bsmith",
+    "sourceId": "source1",
+    "attributes": {
+      "email": "bob.smith@example.com",
+      "status": "active"
+    }
+  }
+  

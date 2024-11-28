@@ -1,0 +1,17 @@
+{
+    "id": "role1",
+    "name": "Manager Role",
+    "members": [
+      {
+        "id": "12345",
+        "name": "Bob Smith"
+      }
+    ],
+    "entitlements": [
+      {
+        "id": "entitlement1",
+        "name": "Admin Access"
+      }
+    ]
+  }
+  

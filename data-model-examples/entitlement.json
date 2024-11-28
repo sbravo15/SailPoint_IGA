@@ -1,0 +1,10 @@
+{
+    "id": "entitlement1",
+    "name": "Admin Access",
+    "type": "APPLICATION",
+    "attributes": {
+      "description": "Provides admin-level access to the application.",
+      "application": "HR System"
+    }
+  }
+  

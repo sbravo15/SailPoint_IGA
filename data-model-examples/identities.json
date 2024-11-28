@@ -1,0 +1,24 @@
+{
+    "id": "12345",
+    "name": "Bob Smith",
+    "email": "bob.smith@example.com",
+    "attributes": {
+      "country": "USA",
+      "department": "Sales",
+      "manager": "Susan Doe"
+    },
+    "@accounts": [
+      {
+        "id": "account1",
+        "nativeIdentity": "bsmith",
+        "sourceId": "source1"
+      }
+    ],
+    "@access": [
+      {
+        "type": "ENTITLEMENT",
+        "displayName": "Employee"
+      }
+    ]
+  }
+  

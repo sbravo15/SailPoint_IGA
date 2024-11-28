@@ -1,0 +1,15 @@
+{
+    "id": "accessProfile1",
+    "name": "Full Access Profile",
+    "entitlements": [
+      {
+        "id": "entitlement1",
+        "name": "Admin Access"
+      },
+      {
+        "id": "entitlement2",
+        "name": "User Access"
+      }
+    ]
+  }
+  

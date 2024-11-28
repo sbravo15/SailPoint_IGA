@@ -1,0 +1,16 @@
+{
+    "id": "source1",
+    "name": "Active Directory",
+    "type": "DIRECTORY",
+    "attributes": {
+      "host": "ad.example.com",
+      "connectionStatus": "connected"
+    },
+    "@accounts": [
+      {
+        "id": "account1",
+        "nativeIdentity": "bsmith"
+      }
+    ]
+  }
+  
