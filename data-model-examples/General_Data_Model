@@ -1,0 +1,22 @@
+"access": [
+  {
+    "attribute": "groups",
+    "description": "Employee Access",
+    "displayName": "Employees",
+    "id": "2c91808566c6a5920df03618e8",
+    "name": "Employees",
+    "privileged": false,
+    "source": {
+      "id": "2c91808666f42bec016663e44ba",
+      "name": "Directory"
+    },
+    "standalone": false,
+    "type": "ENTITLEMENT",
+    "value": "cn=Employees,ou=groups,dc=ex,dc=com"
+  },
+  {
+    "attribute": "groups",
+    "description": "Manager Access",
+    "displayName": "Managers"
+  }
+]
